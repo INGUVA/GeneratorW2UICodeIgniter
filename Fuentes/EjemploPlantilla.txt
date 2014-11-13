@@ -1,0 +1,55 @@
+//Definición de un elemento del modelo
+{
+	"Nombre"		: <Nombre>,							//Nombre de la clase (inicial en mayuscula)
+	"NombreTablaBD"	: <NombreBD>,						//Nombre de la tabla de la base de datos
+	"Propiedades"	: [ <Propiedad1>, <Propiedad2>...],	//Propiedades de la clase
+	"Formulario" 	: 									//Propiedades de la interfaz del formulario (por ahora será el mismo el formulario crear y modificar)
+		{
+			"Pestañas"	: [ <Pestaña1>, <Pestaña2>...]
+		},
+	"Lista"	:
+		{
+			"Edit" : 	false,
+			"Delete": 	false
+		}	
+}
+
+//Definición de una propiedad de un elemento del modelo
+{
+	"Nombre"		: <String>,				//Nombre del campo
+	"NombreBD"		: <String>, 			//Nombre de la columna en la base de datos (tanto en la tabla como en los resultados obtenidos por select o procedure)
+	"Label"			: <String>, 			//Texto a mostrar en la interfaz gráfica
+	"Tipo"			: <tipoDatos>,			//Tipo de dato del campo (Ver tipos de datos)
+	["UrlItems"]	: <String>,				//Url fuente de las opciones disponibles. Solo obligatorio en list y enum
+	["VisibleWeb"]	: true | false, 		//Indica si será visible en las listas de la intefaz web. Por defecto false
+	["EditableWeb"]	: true | false, 		//Indica si será editable en la interfaz web. Por defecto false
+	["Requerido"]	: true | false, 		//Indica si es un campo obligatorio o no. Por defecto false
+	["BuscarPor"]	: true | false, 		//Indica si será un campo disponible para realizar búsquedas. Por defecto false
+	["OrdenarPor"]	: true | false, 		//Indica si será un campo por el cual ordenar las listas
+	"html" : 
+		{
+			["Title"]		: <String>, 	//Titulo del elemento. Se mostrará en los formularios al situar el cursor encima
+			["Placeholder"]	: <String>,		//Texto que se verá en la caja de texto antes de introducir algún valor 
+			["MaxLength"]	: <Integer>,	//Longitud máxima del texto 
+			["MinLength"]	: <Integer>		//Longitud mínima del texto
+			["Size"]		: <Integer>		//Longitud de la caja
+		}
+}
+
+//Definición de una pestaña de los formularios de la web
+{
+	"Nombre"		: 	<String>,			//Titulo de la pestaña					
+	"NumeroCampos"	:	<Integer> 			//Número de campos que agrupará la pestaña (en orden de definición)
+}
+
+//Tipos de datos disponibles para una propiedad
+Integer,			//Número entero
+Double,				//Número decimal
+String,				//Cadena de texto
+alphanumeric,		//Cadena de texto alfanumérica
+email,				//Cadena de texto con formato email
+Boolean,			//Si o No
+List,				//Lista
+Enum,				//Lista multivalor
+Date,				//Fecha
+

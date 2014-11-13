@@ -1,0 +1,22 @@
+{
+	"Nombre": "Tratamiento",
+	"NombreTablaBD": "tratamiento",
+	"NombreVistaBD": "tratamientos",
+	"Propiedades": [
+		{"Nombre": "descripcion",	"NombreBD": "Descripcion", 		"Label": "Descripción", 		"Tipo": {"Nombre":"Text"},		"Mostrar": true,	"VisibleWeb": true, 	"EditableWeb": true, 	"BuscarPor": true, 	"Requerido": true,	"OrdenarPor": true, "html": {"Title": "Nombre del tratamiento", "Placeholder": "Nombre del paciente", "MaxLength": 50, "Size":60, "MinLength":3}},
+		{"Nombre": "fechaInicio",	"NombreBD": "FechaInicio", 		"Label": "Fecha de inicio",		"Tipo": {"Nombre":"Date"},		"Mostrar": false,	"VisibleWeb": true, 	"EditableWeb": true,	"BuscarPor": true,	"Requerido": true,	"OrdenarPor": true, "html":	{"Title": "Fecha inicial del tratamiento"}},
+		{"Nombre": "fechaFinal",	"NombreBD": "FechaFin", 		"Label": "Fecha de fin",		"Tipo": {"Nombre":"Date"},		"Mostrar": false,	"VisibleWeb": true, 	"EditableWeb": true,	"BuscarPor": true,	"Requerido": true,	"OrdenarPor": true, "html":	{"Title": "Fecha final del tratamiento"}},
+		{"Nombre": "paciente",		"NombreBD": "Paciente", 		"Label": "Paciente",			"Tipo": {"Nombre":"List"},		"Mostrar": false,	"VisibleWeb": true,		"EditableWeb": true, 	"BuscarPor": true,	"Requerido": true, 	"OrdenarPor": false,"html": {"Title": "Imagen", 	"Placeholder": ""}},
+		{"Nombre": "finalizado",	"NombreBD": "Finalizado", 		"Label": "Finalizado",			"Tipo": {"Nombre":"Boolean"},	"Mostrar": false,	"VisibleWeb": true,		"EditableWeb": true, 	"BuscarPor": true,	"Requerido": true, 	"OrdenarPor": false,"html": {"Title": "Tratamiento finalizado", 	"Placeholder": ""}},
+	],
+	"Formulario" : {
+		"Pestañas": [ 
+			
+		]
+	},
+	"Lista" : {
+		"Create": true,
+		"Edit" : 	true,
+		"Delete" : 	true
+	}
+}

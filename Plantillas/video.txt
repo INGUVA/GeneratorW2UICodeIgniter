@@ -1,0 +1,21 @@
+{
+	"Nombre": "Video",
+	"NombreTablaBD": "video",
+	"NombreVistaBD": "videos",
+	"Propiedades": [
+		{"Nombre": "nombre",		"NombreBD": "Nombre", 			"Label": "Nombre", 				"Tipo": {"Nombre":"String"},	"Mostrar": true,	"VisibleWeb": true, 	"EditableWeb": true, 	"BuscarPor": true, 	"Requerido": true,	"OrdenarPor": true, "html": {"Title": "Nombre del video", "Placeholder": "Nombre del paciente", "MaxLength": 50, "Size":60, "MinLength":3}},
+		{"Nombre": "fechaCaptura",	"NombreBD": "FechaCaptura", 	"Label": "Fecha de captura",	"Tipo": {"Nombre":"Date"},		"Mostrar": false,	"VisibleWeb": true, 	"EditableWeb": true,	"BuscarPor": true,	"Requerido": true,	"OrdenarPor": true, "html":	{"Title": "Fecha de captura"}},
+		{"Nombre": "ruta",			"NombreBD": "Ruta", 			"Label": "Video",				"Tipo": {"Nombre":"String"},	"Mostrar": false,	"VisibleWeb": true, 	"EditableWeb": true,	"BuscarPor": true,	"Requerido": true,	"OrdenarPor": true, "html":	{"Title": "Ruta"}},
+		{"Nombre": "paciente",		"NombreBD": "Paciente", 		"Label": "Paciente",			"Tipo": {"Nombre":"List"},	"Mostrar": false,	"VisibleWeb": true,		"EditableWeb": true, 	"BuscarPor": true,	"Requerido": true, 	"OrdenarPor": false,"html": {"Title": "Video", 	"Placeholder": ""}},
+	],
+	"Formulario" : {
+		"Pestañas": [ 
+			
+		]
+	},
+	"Lista" : {
+		"Create": true,
+		"Edit" : 	true,
+		"Delete" : 	true
+	}
+}

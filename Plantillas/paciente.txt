@@ -1,0 +1,23 @@
+{
+	"Nombre": "Paciente",
+	"NombreTablaBD": "paciente",
+	"NombreVistaBD": "pacientes",
+	"Propiedades": [
+		{"Nombre": "nombre",		"NombreBD": "Nombre", 		"Label": "Nombre", 						"Tipo": {"Nombre":"String"},				"Mostrar": true, "VisibleWeb": true, 	"EditableWeb": true, 	"Requerido": true, 	"BuscarPor":true, "OrdenarPor": true, "html" : {"Title": "Nombre del paciente", "Placeholder": "Nombre del paciente", "MaxLength": 50, "Size":60, "MinLength":3}},
+		{"Nombre": "apellidos",		"NombreBD": "Apellidos", 	"Label": "Apellidos",					"Tipo": {"Nombre":"String"},				"Mostrar": false, "VisibleWeb": true,		"EditableWeb": true, 	"Requerido": true, 	"html" : {"Title": "Apellidos del paciente", "Placeholder": "Apellidos", "MaxLength": 50, "Size":60, "MinLength":3}},
+		{"Nombre": "descripcion",	"NombreBD": "Descripcion", 	"Label": "Descripción",					"Tipo": {"Nombre":"String"},				"Mostrar": false, "VisibleWeb": true,		"EditableWeb": true, 	"Requerido": true, 	"html" : {"Title": "Descripción ", "Placeholder": "Descripción ", "Size":60}},
+		{"Nombre": "empresa",		"NombreBD": "Empresa", 		"Label": "Empresa",						"Tipo": {"Nombre":"String"},				"Mostrar": false, "VisibleWeb": true,		"EditableWeb": true, 	"Requerido": true, 	"html" : {"Title": "Empresa", "Placeholder": "Empresa", "Size":60}},
+		{"Nombre": "fechaNacimiento","NombreBD": "FechaNacimiento", 	"Label": "Fecha de nacimiento",	"Tipo": {"Nombre":"Date"},		"Mostrar": false, "VisibleWeb": true, 	"EditableWeb": true,	"BuscarPor": true,	"Requerido": false,	 "OrdenarPor": true, "html":{"Title": "Fecha de nacimiento"}},
+		{"Nombre": "imagen",		"NombreBD": "Imagen",		"Label": "Imagen",						"Tipo":{"Nombre":"String"},				"Mostrar": false, "VisibleWeb": true,		"EditableWeb": true,	"Requerido":true, "html": {"Title": "Imagen"}}
+	],
+	"Formulario" : {
+		"Pestañas": [ 
+			
+		]
+	},
+	"Lista" : {
+		"Create": true,
+		"Edit" : 	true,
+		"Delete" : 	true
+	}
+}
